@@ -71,3 +71,7 @@ h1 b {
 	font-size: 1rem;
 	font-weight: 400;
 }
+
+.input-wrap span {
+	opacity: 0.5;
+}

@@ -36,7 +36,6 @@ $statsJson = json_encode($stats);
         <h1>Kitten <b>Placeholder Image</b> Generator</h1>
 
         <div class="input-wrap">
-            <span>
                 &ltimg src="
             </span>
             <input id="input" type="text" readonly placeholder="" value="https://njiah.ru/pussy/250/250">
