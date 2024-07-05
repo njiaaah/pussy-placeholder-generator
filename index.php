@@ -1,5 +1,4 @@
 <?php
-
 function readStats($filename) {
     if (file_exists($filename)) {
         $data = file_get_contents($filename);
@@ -8,26 +7,8 @@ function readStats($filename) {
     return [];
 }
 
-
 $stats = readStats('stats.json');
-
-
 $totalRequests = count($stats);
-
-
-$uniqueDimensions = [];
-foreach ($stats as $stat) {
-    $dimKey = $stat['width'] . 'x' . $stat['height'];
-    if (!isset($uniqueDimensions[$dimKey])) {
-        $uniqueDimensions[$dimKey] = 0;
-    }
-    $uniqueDimensions[$dimKey]++;
-}
-
-
-$totalUniqueDimensions = count($uniqueDimensions);
-
-
 $statsJson = json_encode($stats);
 ?>
 
@@ -55,10 +36,14 @@ $statsJson = json_encode($stats);
         <h1>Kitten <b>Placeholder Image</b> Generator</h1>
 
         <div class="input-wrap">
+            <span>
+                &ltimg src="
+            </span>
             <input id="input" type="text" readonly placeholder="" value="https://njiah.ru/pussy/250/250">
+            <span>
+                "&gt
+            </span>
         </div>
-
-
 
         <div class="img-container">
 
